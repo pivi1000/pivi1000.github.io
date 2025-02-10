@@ -1,14 +1,14 @@
 * {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  padding: 5px;
+  margin: 5px;
 }
 
 .container {
   max-width: 1100px;
-  margin: 0 auto;
+  margin: 5px;
   overflow: auto;
-  padding: 0 40px;
+  padding: 10px 10px;
 }
 
 body {
@@ -34,13 +34,13 @@ h2 {
 }
 
 p {
-  margin: 10px 0;
+  margin: 10px;
 }
 /* Navbar */
 .navbar {
   background-color:green;
   color: #fff;
-  height: 70px;
+  height: 50px;
 }
 
 .navbar ul {
@@ -50,7 +50,7 @@ p {
 .navbar a {
   color: yellow;
   padding: 10px;
-  margin: 5px 5px;
+  margin: 5px;
 }
 
 .navbar a:hover {
