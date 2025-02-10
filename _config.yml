@@ -1,0 +1,6 @@
+echo "theme: minima" > _config.yml
+git add _config.yml
+git commit -m "Lisätty Jekyll-teeman asetustiedosto"
+git push
+
+theme: minima
