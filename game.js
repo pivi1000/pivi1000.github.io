@@ -68,7 +68,7 @@ function clearGameArea() {
 // Hyppääjien luonti
 function createJumper() {    
     const jumper = document.createElement('img');
-    jumper.src = '/images/parachute.jpg';
+    jumper.src = '/parachute.jpg';
     jumper.className = 'jumper';
     jumper.style.left = `${Math.random() * (gameWidth - 30)}px`; // Luonti satunnaiseen paikkaan
     gameArea.appendChild(jumper);
