@@ -11,7 +11,7 @@ let score = 0;
 let lostJumper = 0;
 let gameRunning = false;
 
-// Lentsikan liikkuminen. Tämä oli todella hankala vaihe kun ensin lentokone tahtoi aina ylittää pelialueen reunoilta.
+// Lentsikan liikkuminen
 document.addEventListener('keydown', (event) => {
     if (event.key === 'ArrowLeft' && planePosition > 0) {
         planePosition -= planeSpeed;
@@ -50,11 +50,6 @@ function gameLoop() {
 
     setTimeout(gameLoop, 1000 + Math.random() * 1000); // Hyppääjien ilmestyminen randomisti 1-2 sekunnin välein
 } 
-/* En meinannut millään saada peliä loppumaan, monenlaista mallia ja kysymystä piti netin syövereistä kaivella ja tutkia
-ennen kuin tämän sai jonkinlaiselle mallille. Tai kyllä minä alunperin helpomminkin sain pelin loppumaan, mutta sitten oli ongelmia
-saada uusi peli alkamaan ja startti nappi toimimaan oikein kun pukkasi aina entisten laskuvarjohyppääjien sekaan
-uudet hyppääjät :) Piti sitten käyttääkin vähän enemmän aikaa (=päivä tolkulla) ja käyttää "tyhjennä pelikenttä" funktiota yms. 
- */
 
 function endGame() {   
     alert(`GAME OVER! You have lost five skydivers. Your score: ${score}`);
@@ -73,7 +68,7 @@ function clearGameArea() {
 // Hyppääjien luonti
 function createJumper() {    
     const jumper = document.createElement('img');
-    jumper.src = '/parachute.jpg';
+    jumper.src = '/images/parachute.jpg';
     jumper.className = 'jumper';
     jumper.style.left = `${Math.random() * (gameWidth - 30)}px`; // Luonti satunnaiseen paikkaan
     gameArea.appendChild(jumper);
