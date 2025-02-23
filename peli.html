@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title style="color: skyblue;">Skydiver</title>
+</head>
+
+<body>
+    <h1 style="color: skyblue; margin: 15px;">Skydiver</h1>   
+    <div style="display: flex">
+        <button style="margin: 15px" class="button" id="start">Start Game</button>
+        <div style="color: skyblue; font-size: 18px; padding-top: 15px" id="score">Score: <span>0</span></div>
+        <div style="color: skyblue; font-size: 18px; padding: 15px;" id="lostJumper">Lost: <span>0</span></div>
+    </div>
+    <div id="gameArea">
+        <div id="plane"><img src="/plane.png" alt="plane"></div>
+        <div class="jumper"></div>
+    </div>        
+
+    <script src="game.js"></script>
